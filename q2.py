@@ -70,7 +70,11 @@ def simulate_client_server(
             # Obtain the throughput list from the output
             throughput_list = process_output(o)
             # plot the throughput list
-            plt.plot(throughput_list, label=cc.lower())
+            plt.plot(
+                [0.1 * i for i in range(0, len(throughput_list))],
+                throughput_list,
+                label=cc.lower(),
+            )
         plt.xlabel("Time (s)")
         plt.ylabel("Throughput (Mbps)")
         plt.title("Throughput vs Time with link loss " + str(link_loss) + "%")
