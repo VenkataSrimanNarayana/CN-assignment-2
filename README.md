@@ -107,3 +107,11 @@ sudo python q2.py --config b -ll 3
 ![Alt text](images/q2_b_all_cc_3.png)
 
 It appears that BBR shows the highest throughput in case of packets losses and very high fluctuations in throughput during loss as compared to others. Vegas shows very less throughput change. This might be becuase of the fact that vegas uses RTT to throttle bandwith usage, and it does not use packet loss as a metric. From this we can say that BBR causes more congestion in the network as compared to others(which are sensitive to congestion in the network).
+
+### References:
+
+1. [Iperf](https://iperf.fr/)
+2. [Mininet](http://mininet.org/)
+3. [Mininet Python API](http://mininet.org/api/annotated.html)
+4. [Mininet Router Implementation](https://github.com/mininet/mininet/blob/master/examples/linuxrouter.py)  
+   5 .[Congestion Control Algorithms](https://www.speedguide.net/articles/tcp-congestion-control-algorithms-comparison-7423)
