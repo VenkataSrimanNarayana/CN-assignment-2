@@ -39,7 +39,7 @@ $ python q2.py --config[-c] <config> --link-loss[-ll] <link loss> --congestion-c
 **(b)** The client is run for `10sec` and the plots are obtained by running the file using the below command. It can be observed that BBR congestion control gives less throughput.
 
 ```console
-sudo python q2.py --config b
+$ sudo python q2.py --config b
 ```
 
 ![Alt text](images/q2_b_all_cc_0.png)
@@ -49,25 +49,25 @@ sudo python q2.py --config b
 > **_Note:_** These graphs when run at different times might produce different plots depending on which host first starts sending packets.
 
 ```console
-sudo python q2.py --config c -cc BBR
+$ sudo python q2.py --config c -cc BBR
 ```
 
 ![Alt text](images/q2_c_bbr.png)
 
 ```console
-sudo python q2.py --config c -cc Cubic
+$ sudo python q2.py --config c -cc Cubic
 ```
 
 ![Alt text](images/q2_c_cubic.png)
 
 ```console
-sudo python q2.py --config c -cc Reno
+$ sudo python q2.py --config c -cc Reno
 ```
 
 ![Alt text](images/q2_c_reno.png)
 
 ```console
-sudo python q2.py --config c -cc Vegas
+$ sudo python q2.py --config c -cc Vegas
 ```
 
 ![Alt text](images/q2_c_vegas.png)
@@ -75,7 +75,7 @@ sudo python q2.py --config c -cc Vegas
 The following command was used to get the throughput plots for different congestion control algorithm for a given host.
 
 ```console
-sudo python q2.py --config c
+$ sudo python q2.py --config c
 ```
 
 ![Alt text](images/q2_c_h1.png)
@@ -85,13 +85,13 @@ sudo python q2.py --config c
 **(d)** The following command was used to get the throughput plots on client side for different congestion control algorithm for a given link loss{`1`, `3`}.
 
 ```console
-sudo python q2.py --config b -ll 1
+$ sudo python q2.py --config b -ll 1
 ```
 
 ![Alt text](images/q2_b_all_cc_1.png)
 
 ```console
-sudo python q2.py --config b -ll 3
+$ sudo python q2.py --config b -ll 3
 ```
 
 ![Alt text](images/q2_b_all_cc_3.png)
