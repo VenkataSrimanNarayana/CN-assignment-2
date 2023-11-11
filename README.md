@@ -13,8 +13,9 @@
 > 2. For the path h1 -> ra -> rb -> rc -> h6
 >    ![Alt text](images/image3.png)
 
-**(d)** The routing tables are printed using the code. The routing tables are in order ra, rb, rc. > For (a),
+**(d)** The routing tables are printed using the code. The routing tables are in order ra, rb, rc.
 
+> For (a),
 > ![Alt text](images/image4.png)  
 > For (c),  
 > ![Alt text](images/image5.png)  
