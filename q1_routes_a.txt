@@ -1,0 +1,21 @@
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+192.168.0.0     0.0.0.0         255.255.255.0   U     0      0        0 ra-eth1
+192.168.1.0     192.168.3.1     255.255.255.0   UG    0      0        0 ra-eth2
+192.168.2.0     192.168.5.0     255.255.255.0   UG    0      0        0 ra-eth3
+192.168.3.0     0.0.0.0         255.255.255.0   U     0      0        0 ra-eth2
+192.168.5.0     0.0.0.0         255.255.255.0   U     0      0        0 ra-eth3
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+192.168.0.0     192.168.3.0     255.255.255.0   UG    0      0        0 rb-eth2
+192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 rb-eth1
+192.168.2.0     192.168.4.1     255.255.255.0   UG    0      0        0 rb-eth3
+192.168.3.0     0.0.0.0         255.255.255.0   U     0      0        0 rb-eth2
+192.168.4.0     0.0.0.0         255.255.255.0   U     0      0        0 rb-eth3
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+192.168.0.0     192.168.5.1     255.255.255.0   UG    0      0        0 rc-eth3
+192.168.1.0     192.168.4.0     255.255.255.0   UG    0      0        0 rc-eth2
+192.168.2.0     0.0.0.0         255.255.255.0   U     0      0        0 rc-eth1
+192.168.4.0     0.0.0.0         255.255.255.0   U     0      0        0 rc-eth2
+192.168.5.0     0.0.0.0         255.255.255.0   U     0      0        0 rc-eth3
