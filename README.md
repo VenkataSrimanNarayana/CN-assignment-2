@@ -1,23 +1,23 @@
 # Question 1
 
-**(a)** The network topology called `NetworkTopo` has been defined inside the q1.py file using the python api of mininet. `pingall` command inside mininet give the following output.  
- ![Alt text](images/image.png)
+**(a)** The network topology called `NetworkTopo()` has been defined inside the q1.py file using the python api of mininet. `pingall` command inside mininet give the following output.  
+ ![Alt text](images/image.png)  
 **(b)** Running the wireshark on router `ra` using the command `ra wireshark &`, and then running the `pingall` command inside mininet captures the following packets. The entire TCP Dump has been captured and saved inside the file called `q1_packets.pcapng`.
-![Alt text](images/image1.png)
+![Alt text](images/image1.png)  
 **(c)** Updated the routing table in both ra and rc so that the packets are only sent to the rb, where they are again forwarded.
 
-    > Comparing latency using the ping command gave the following
-    >
-    > 1. For path h1 -> ra -> rc -> h6
-    >    ![Alt text](images/image2.png)
-    > 2. For the path h1 -> ra -> rb -> rc -> h6
-    >    ![Alt text](images/image3.png)
+> Comparing latency using the ping command gave the following
+>
+> 1. For path h1 -> ra -> rc -> h6
+>    ![Alt text](images/image2.png)
+> 2. For the path h1 -> ra -> rb -> rc -> h6
+>    ![Alt text](images/image3.png)
 
 **(d)** The routing tables are printed using the code. The routing tables are in order ra, rb, rc. > For (a),
 
 > ![Alt text](images/image4.png)  
 > For (c),  
-> ![Alt text](images/image5.png)
+> ![Alt text](images/image5.png)  
 > The routing tables have also been saved to the files `q1_routes_a.txt` and `q1_routes_c.txt` for the respective questions (a) and (c)
 
 # Question 2
